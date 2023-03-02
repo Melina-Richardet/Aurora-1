@@ -1,0 +1,2 @@
+
+gnuplot  recuentos.gnuplot
