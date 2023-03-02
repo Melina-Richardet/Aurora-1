@@ -1,0 +1,524 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://ww.w3.org/TR/xhtml1/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" href="infoEstadisticas/favicon.ico" type="image/x-icon"/>
+<link href="infoEstadisticas/estilos.css" rel="stylesheet" type="text/css">
+<title>   Resultados estad&iacute;sticos   </title>
+
+</head>
+
+<body bgcolor="#FFFFFF" witdh="100%;align:center"><!--  Aqui le pongo color de fondo al cuerpo de la pagina-->
+<header><center><h2>RESULTADOS ESTAD&Iacute;STICOS</h2></center></header>
+  <div id='main'>
+    <nav><center><h2 style="margin-bottom: 0px;" >ARCHIVOS</h2></center>
+      <ul>
+        <li>
+          <a href="datos/tablaEntrada.html" target="_blank" content="text/csv" >Datos Ingresados</a>
+        </li>
+        <li>
+          <a href="datos/tablaSalidasEstadisticas.html" target="_blank" content="text/csv" >Datos Estadisticos</a>
+        </li>
+        <li>
+          Estadisticas Quincena
+          <ul>
+            <li>
+              <a id="m_quinEvRodeo" href="datos/tablaQuinc_EvolucionRodeo.html" target="_blank" content="text/csv" >Evoluci&oacute;n Rodeo</a>
+              <ul>
+                <li>
+                  <a href="#lactancia">Lactancia</a>
+                  <ul><li><a href="datos/quinc_EvolucionLactancia" target="_blank">Datos</a></li></ul>
+                </li>
+                <li>
+                  <a href="#preniadas">Pre&ntilde;ez</a>
+                  <ul><li><a href="datos/quinc_EvolucionPreniadas" target="_blank">Datos</a></li></ul>
+                </li>
+                <li>
+                  Descarte
+                  <ul><li><a href="#descarteAbo">Abortadas</a><ul><li><a href="datos/quinc_EvolucionDescarteAbo" target="_blank">Datos</a></li></ul></li>
+                  <li><a href="#descarteInf">Infertiles</a><ul><li><a href="datos/quinc_EvolucionDescarteInf" target="_blank">Datos</a></li></ul></li>
+                  <li><a href="#descarteMue">Muertas</a><ul><li><a href="datos/quinc_EvolucionDescarteMue" target="_blank">Datos</a></li></ul></li>
+                  <li><a href="#descarteVie">Viejas</a><ul><li><a href="datos/quinc_EvolucionDescarteVie" target="_blank">Datos</a></li></ul></li></ul>
+                </li>
+              </ul>
+            </li>
+            <br/>
+            <li>
+              <a id="m_quinEvMastitis" href="datos/tablaQuinc_EvolucionMastitis.html" target="_blank">Evoluci&oacute;n Mastitis</a>
+              <ul>
+                <li>
+                  <a href="#mastitisClinicaQuincena">Mastitis Clinica</a>
+                  <ul><li><a href="datos/quinc_EvolucionMC" target="_blank">Datos</a></li></ul>
+                </li>
+                <li>
+                  <a href="#mastitisSubclinicaQuincena">Mastitis Subclinica</a>
+                  <ul><li><a href="datos/quinc_EvolucionMSC" target="_blank">Datos</a></li></ul>
+                </li>
+              </ul>
+            </li>
+            <br/>
+		  <li>
+          <a id="m_quinVarMastitis" href="datos/tablaQuinc_ConteoVariacionMastitis.html" target="_blank">Variacion de Salud</a>
+          <ul>
+            <li>
+              <a href="#vSaludNuevaMC">Nueva Mastitis Clinica</a>
+              <ul><li><a href="datos/quinc_EvolucionSaludNuevaMC" target="_blank">Datos</a></li></ul>
+            </li>
+            <li>
+              <a href="#vSaludNuevaMSC">Nueva Mastitis Subclinica</a>
+              <ul><li><a href="datos/quinc_EvolucionSaludNuevaMSC" target="_blank">Datos</a></li></ul>
+            </li>
+            <li>
+              <a href="#vSaludCronicaMSC">Cronica Mastitis Subclinica</a>
+              <ul><li><a href="datos/quinc_EvolucionSaludCronicaMSC" target="_blank">Datos</a></li></ul>
+            </li>
+          </ul>
+        </li>
+        <br/>
+          </ul>
+        </li>
+
+        <li>
+          Estadisticas Lactancia
+          <ul>
+          <li>
+                <a id="m_descarteAborto" href="#descarteAborto">Evoluci&oacute;n Descarte Aborto</a>
+                <ul><li><a href="datos/lact_EvolucionDescAborto" target="_blank">Datos</a></li></ul>
+          </li>  
+	        <li>
+	          <a id="m_lactEvMastitis" href="datos/tablaLact_EvolucionMastitis.html" target="_blank">Evoluci&oacute;n Mastitis</a>
+	          <ul>
+	            <li>
+	              <a href="#mastitisClinicaLactancia">Mastitis Clinica</a>
+	              <ul><li><a href="datos/lact_EvolucionMC" target="_blank">Datos</a></li></ul>
+	            </li>
+	            <li>
+	              <a href="#mastitisSubclinicaLactancia">Mastitis Subclinica</a>
+	              <ul><li><a href="datos/lact_EvolucionMSC" target="_blank">Datos</a></li></ul>
+	            </li>
+	          </ul>
+	        </li>
+	         <br/>
+	        <li>
+	          <a id="m_lactEvPerdida" href="datos/tablaLact_EvolucionPerdida.html" target="_blank">Evoluci&oacute;n Perdida</a>
+	          <ul>
+	            <li>
+	              <a href="#perdidaTMCLactancia">Total Mastitis Clinica</a>
+	              <ul><li><a href="datos/lact_EvolucionPerdidaTotalMC" target="_blank">Datos</a></li></ul>
+	            </li>
+	            <li>
+	              <a href="#perdidaTMSCLactancia">Total Mastitis Subclinica</a>
+	              <ul><li><a href="datos/lact_EvolucionPerdidaTotalMSC" target="_blank">Datos</a></li></ul>
+	            </li>
+	            <li>
+	              <a href="#perdidaPMCLactancia">Promedio Mastitis Clinica</a>
+	              <ul><li><a href="datos/lact_EvolucionPerdidaPromedioMC" target="_blank">Datos</a></li></ul>
+	            </li>
+	            <li>
+	              <a href="#perdidaPMSCLactancia">Promedio Mastitis Subclinica</a>
+	              <ul><li><a href="datos/lact_EvolucionPerdidaPromedioMSC" target="_blank">Datos</a></li></ul>
+	            </li>
+	          </ul>
+	        </li>
+         <br/>
+          <li>
+          <a id="m_lactVarMastitis" href="datos/tablaLact_ConteoVariacionMastitis.html" target="_blank">Variacion de Salud</a>
+          <ul>
+            <li>
+              <a href="#vSaludNuevaMCLact">Nueva Mastitis Clinica</a>
+              <ul><li><a href="datos/lact_EvolucionSaludNuevaMC" target="_blank">Datos</a></li></ul>
+            </li>
+            <li>
+              <a href="#vSaludNuevaMSCLact">Nueva Mastitis Subclinica</a>
+              <ul><li><a href="datos/lact_EvolucionSaludNuevaMSC" target="_blank">Datos</a></li></ul>
+            </li>
+            <li>
+              <a href="#vSaludCronicaMSCLact">Cronica Mastitis Subclinica</a>
+              <ul><li><a href="datos/lact_EvolucionSaludCronicaMSC" target="_blank">Datos</a></li></ul>
+            </li>
+          </ul>
+        </li>
+        <br/>
+         </ul>
+        </li>
+
+        <li>
+          Datos Anuales
+          <ul>
+            <li>
+              <a id="m_anualPerdidas" href="datos/tablaAnual_Perdidas.html" target="_blank">Perdidas por Mastitis</a>
+                            <ul>   <li>
+              <a href="#a_perdidaMC">Grafico MC</a>
+              <ul><li><a href="datos/anual_PerdidaMC" target="_blank">Datos</a></li></ul>
+            </li> </ul>
+                          <ul>   <li>
+              <a href="#a_perdidaMSC">Grafico MSC</a>
+              <ul><li><a href="datos/anual_PerdidaMSC" target="_blank">Datos</a></li></ul>
+            </li> </ul>
+              <ul>   <li>
+              <a href="#a_perdidaMTot">Grafico Total</a>
+              <ul><li><a href="datos/anual_PerdidaMTot" target="_blank">Datos</a></li></ul>
+            </li> </ul>
+            </li>
+            <li>
+              <a id="m_anualDescarteM" href="datos/tablaAnual_DescarteM.html" target="_blank">Descarte por Mastitis</a>
+               <ul>   <li>
+              <a href="#a_descarteMC">Grafico MC</a>
+              <ul><li><a href="datos/anual_DescarteMC" target="_blank">Datos</a></li></ul>
+            </li> </ul>
+                          <ul>   <li>
+              <a href="#a_descarteMSC">Grafico MSC</a>
+              <ul><li><a href="datos/anual_DescarteMSC" target="_blank">Datos</a></li></ul>
+            </li> </ul>
+              <ul>   <li>
+              <a href="#a_descarteMTot">Grafico Total</a>
+              <ul><li><a href="datos/anual_DescarteMTot" target="_blank">Datos</a></li></ul>
+            </li> </ul>
+            </li>
+            <li>
+              <a id="m_anualPreniezM" href="datos/tablaAnual_PreniezM.html" target="_blank">Perdida de Pre&ntilde;ez</a>
+               <ul>   <li>
+              <a href="#a_prenezMC">Grafico MC</a>
+              <ul><li><a href="datos/anual_PrenezMC" target="_blank">Datos</a></li></ul>
+            </li> </ul>
+                          <ul>   <li>
+              <a href="#a_prenezMSC">Grafico MSC</a>
+              <ul><li><a href="datos/anual_PrenezMSC" target="_blank">Datos</a></li></ul>
+            </li> </ul>
+              <ul>   <li>
+              <a href="#a_prenezMTot">Grafico Total</a>
+              <ul><li><a href="datos/anual_PrenezMTot" target="_blank">Datos</a></li></ul>
+            </li> </ul>
+            </li>
+            <li>
+              <a id="m_anualPreniez17" href="datos/tablaAnual_Preniez17.html" target="_blank">Pre&ntilde;ez mes 17</a>
+              <ul>   <li>
+              <a href="#a_mes17">Grafico</a>
+              <ul><li><a href="datos/anual_Mes17" target="_blank">Datos</a></li></ul>
+            </li> </ul>
+            </li>
+            <li>
+              <a id="m_anualSalud" href="datos/tablaAnual_Salud.html" target="_blank">Salud - Cantidad</a>
+               <ul>   <li>
+              <a href="#a_cantidadMC">Grafico MC</a>
+              <ul><li><a href="datos/anual_CantidadMC" target="_blank">Datos</a></li></ul>
+            </li> </ul>
+                          <ul>   <li>
+              <a href="#a_cantidadMSC">Grafico MSC</a>
+              <ul><li><a href="datos/anual_CantidadMSC" target="_blank">Datos</a></li></ul>
+            </li> </ul>
+              <ul>   <li>
+              <a href="#a_cantidadMTot">Grafico Total</a>
+              <ul><li><a href="datos/anual_CantidadMTot" target="_blank">Datos</a></li></ul>
+            </li> </ul>
+            </li>
+            <li>
+              <a id="m_anualRcsTambo" href="datos/tablaAnual_RcsTambo.html" target="_blank">Rcs T</a>
+              <ul>   <li>
+              <a href="#a_RcsTambo">Grafico</a>
+              <ul><li><a href="datos/anual_RcsTambo" target="_blank">Datos</a></li></ul>
+            </li> </ul>
+      </li>
+	    <li>
+              <a id="m_anualCostos" href="" target="_blank">Costos</a>
+                            <ul>   <li>
+              <a href="#a_gastoTotal">Grafico Gastos Total</a>
+              <ul><li><a href="datos/anual_GastoTotal" target="_blank">Datos</a></li></ul>
+            </li> </ul>
+                          <ul>   <li>
+              <a href="#a_perdTotal">Grafico Perdida Total</a>
+              <ul><li><a href="datos/anual_PerdTotal" target="_blank">Datos</a></li></ul>
+            </li> </ul>
+              <ul>   <li>
+              <a href="#a_costoTotal">Grafico Costo Total</a>
+              <ul><li><a href="datos/anual_CostoTotal" target="_blank">Datos</a></li></ul>
+            </li> </ul>
+            </li>
+
+            <li>
+              <a href="datos/tablaAnual_Porcentajes.html" target="_blank">Promedio</a>
+            </li>
+          </ul>
+        </li>
+      </nav>
+      <section>
+      <center><h2 style="margin-bottom: 0px;"> GR&Aacute;FICOS</h2>
+        <div style="width:98%;background:#F2F5A9;padding:40px 00px" title="Gr&aacute;ficos por quincena">
+        <a id="lactancia"><h3>Evoluci&oacute;n Lactancia</h3></a><br/>
+        <img src="datos/quinc_EvolucionLactancia.png"  width="960px" heigth="720px"  title="Gr&aacute;fico Evoluci&oacute;n Lactancia"  />
+        <span style="display:inline-block">
+          <a href="#m_quinEvRodeo"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+	        <a href="datos/quinc_EvolucionLactancia" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Evoluci&oacute;n Lactancia" /></a>
+        </span><br/>
+
+	      <a id="preniadas"><h3>Evoluci&oacute;n Pre&ntilde;ez</h3></a><br/>
+        <img src="datos/quinc_EvolucionPreniadas.png"  width="960px" heigth="720px" title="Gr&aacute;fico Evoluci&oacute;n Pre&ntilde;ez"  />
+	      <span style="display:inline-block">
+          <a href="#m_quinEvRodeo"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/quinc_EvolucionPreniadas" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Evoluci&oacute;n Pre&ntilde;ez" /></a>
+        </span><br/>  
+
+	      <a id="descarteAbo"><h3>Evoluci&oacute;n Descarte Abortadas</h3></a><br/>
+        <img src="datos/quinc_EvolucionDescarteAbo.png"   width="960px" heigth="720px" title="Gr&aacute;fico Evoluci&oacute;n Descarte Abortadas" />
+        <span style="display:inline-block">
+          <a href="#m_quinEvRodeo"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/quinc_EvolucionDescarteAbo" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Evoluci&oacute;n Descarte Abortadas" /></a>
+        </span><br/>  
+
+        <a id="descarteInf"><h3>Evoluci&oacute;n Descarte Infertiles</h3></a><br/>
+        <img src="datos/quinc_EvolucionDescarteInf.png"   width="960px" heigth="720px" title="Gr&aacute;fico Evoluci&oacute;n Descarte Infertiles" />
+        <span style="display:inline-block">
+          <a href="#m_quinEvRodeo"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/quinc_EvolucionDescarteInf" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Evoluci&oacute;n Descarte Infertiles" /></a>
+        </span><br/>  
+
+        <a id="descarteMue"><h3>Evoluci&oacute;n Descarte Muertas</h3></a><br/>
+        <img src="datos/quinc_EvolucionDescarteMue.png"   width="960px" heigth="720px" title="Gr&aacute;fico Evoluci&oacute;n Descarte Muertas" />
+        <span style="display:inline-block">
+          <a href="#m_quinEvRodeo"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/quinc_EvolucionDescarteMue" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Evoluci&oacute;n Descarte Muertas" /></a>
+        </span><br/>  
+
+        <a id="descarteVie"><h3>Evoluci&oacute;n Descarte Viejas</h3></a><br/>
+        <img src="datos/quinc_EvolucionDescarteVie.png"   width="960px" heigth="720px" title="Gr&aacute;fico Evoluci&oacute;n Descarte Viejas" />
+        <span style="display:inline-block">
+          <a href="#m_quinEvRodeo"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/quinc_EvolucionDescarteVie" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Evoluci&oacute;n Descarte Viejas" /></a>
+        </span><br/>  
+        
+	      <a id="mastitisClinicaQuincena"><h3>Evoluci&oacute;n Mastitis Clinica Quincena</h3></a><br/>
+        <img src="datos/quinc_EvolucionMC.png"  width="960px" heigth="720px" title="Gr&aacute;fico Evoluci&oacute;n Mastitis Clinica Quincena" />
+	      <span style="display:inline-block">
+          <a href="#m_quinEvMastitis"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/quinc_EvolucionMC" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Evoluci&oacute;n Mastitis Clinica Quincena" /></a>
+        </span><br/>  
+
+	      <a id="mastitisSubclinicaQuincena"><h3>Evoluci&oacute;n Mastitis Subclinica Quincena</h3></a><br/>
+        <img src="datos/quinc_EvolucionMSC.png"   width="960px" heigth="720px" title="Gr&aacute;fico Evoluci&oacute;n Mastitis Subclinica Quincena"  />
+	      <span style="display:inline-block">
+          <a href="#m_quinEvMastitis"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/quinc_EvolucionMSC" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Evoluci&oacute;n Mastitis Subclinica Quincena" /></a>
+        </span><br/>            
+
+	      <a id="vSaludNuevaMC"><h3>Variaci&oacute;n Salud Nueva Mastitis Clinica</h3></a><br/>
+        <img src="datos/quinc_EvolucionSaludNuevaMC.png"   width="960px" heigth="720px" title="Gr&aacute;fico Variaci&oacute;n Salud Nueva Mastitis Clinica"  />
+	      <span style="display:inline-block">
+          <a href="#m_quinVarMastitis"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/quinc_EvolucionSaludNuevaMC" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Variaci&oacute;n Salud Nueva Mastitis Clinica" /></a>
+        </span><br/>  
+
+        <a id="vSaludNuevaMSC"><h3>Variaci&oacute;n Salud Nueva Mastitis Subclinica </h3></a><br/>
+        <img src="datos/quinc_EvolucionSaludNuevaMSC.png"   width="960px" heigth="720px" title="Gr&aacute;fico Variaci&oacute;n Salud Nueva Mastitis Subclinica"  />
+	      <span style="display:inline-block">
+          <a href="#m_quinVarMastitis"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/quinc_EvolucionSaludNuevaMSC" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Variaci&oacute;n Salud Nueva Mastitis Subclinica" /></a>
+        </span><br/>  
+
+        <a id="vSaludCronicaMSC"><h3>Variaci&oacute;n Salud Cr&oacute;nica MSC</h3></a><br/>
+        <img src="datos/quinc_EvolucionSaludCronicaMSC.png"   width="960px" heigth="720px" title="Gr&aacute;fico Variaci&oacute;n Salud Cr&oacute;nica MSC"  />
+	      <span style="display:inline-block">
+          <a href="#m_quinVarMastitis"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/quinc_EvolucionSaludCronicaMSC" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Variaci&oacute;n Salud Cr&oacute;nica MSC" /></a>
+        </span><br/>            
+      </div>
+<!-- Graficos Por lactancia -->
+      <div style="width:98%;background:#BCF5A9;padding:40px 00px" title="Gr&aacute;ficos por lactancia">
+        <a id="descarteAborto"><h3>Evoluci&oacute;n Descarte Aborto Lactancia</h3></a><br/>
+        <img src="datos/lact_EvolucionDescAborto.png"  width="960px" heigth="720px" title="Gr&aacute;fico Evoluci&oacute;n Descarte Aborto Lactancia" />
+        <span style="display:inline-block">
+          <a href="#m_descarteAborto"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/lact_EvolucionDescAborto" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Evoluci&oacute;n Descarte Aborto Lactancia" /></a>
+        </span><br/>  
+
+        <a id="mastitisClinicaLactancia"><h3>Evoluci&oacute;n Mastitis Clinica Lactancia</h3></a><br/>
+        <img src="datos/lact_EvolucionMC.png"  width="960px" heigth="720px" title="Gr&aacute;fico Evoluci&oacute;n Mastitis Clinica Lactancia" />
+	      <span style="display:inline-block">
+          <a href="#m_lactEvMastitis"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/lact_EvolucionMC" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Evoluci&oacute;n Mastitis Clinica Lactancia" /></a>
+        </span><br/>  
+
+	      <a id="mastitisSubclinicaLactancia"><h3>Evoluci&oacute;n Mastitis Subclinica Lactancia</h3></a><br/>
+        <img src="datos/lact_EvolucionMSC.png"   width="960px" heigth="720px" title="Gr&aacute;fico Evoluci&oacute;n Mastitis Subclinica Lactancia"  />
+	      <span style="display:inline-block">
+          <a href="#m_lactEvMastitis"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/lact_EvolucionMSC" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Evoluci&oacute;n Mastitis Subclinica Lactancia" /></a>
+        </span><br/>  
+
+        <a id="perdidaTMCLactancia"><h3>Evoluci&oacute;n Perdida Total Mastitis Clinica Lactancia</h3></a><br/>
+        <img src="datos/lact_EvolucionPerdidaTotalMC.png"  width="960px" heigth="720px" title="Gr&aacute;fico Evoluci&oacute;n Perdida Total Mastitis Clinica Lactancia" />
+	      <span style="display:inline-block">
+          <a href="#m_lactEvPerdida"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/lact_EvolucionPerdidaTotalMC" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Evoluci&oacute;n Perdida Total Mastitis Clinica Lactancia" /></a>
+        </span><br/>  
+
+	      <a id="perdidaTMSCLactancia"><h3>Evoluci&oacute;n Perdida Total Mastitis Subclinica Lactancia</h3></a><br/>
+        <img src="datos/lact_EvolucionPerdidaTotalMSC.png"   width="960px" heigth="720px" title="Gr&aacute;fico Evoluci&oacute;n Perdida Total Mastitis Subclinica Lactancia"  />
+	      <span style="display:inline-block">
+          <a href="#m_lactEvPerdida"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/lact_EvolucionPerdidaTotalMSC" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Evoluci&oacute;n Perdida Total Mastitis Subclinica Lactancia" /></a>
+        </span><br/>  
+
+        <a id="perdidaPMCLactancia"><h3>Evoluci&oacute;n Perdida Promedio Mastitis Clinica Lactancia</h3></a><br/>
+        <img src="datos/lact_EvolucionPerdidaPromedioMC.png"  width="960px" heigth="720px" title="Gr&aacute;fico Evoluci&oacute;n Perdida Promedio Mastitis Clinica Lactancia" />
+	      <span style="display:inline-block">
+          <a href="#m_lactEvPerdida"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/lact_EvolucionPerdidaPromedioMC" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Evoluci&oacute;n Perdida Promedio Mastitis Clinica Lactancia" /></a>
+        </span><br/>  
+
+	      <a id="perdidaPMSCLactancia"><h3>Evoluci&oacute;n Perdida Promedio Mastitis Subclinica Lactancia</h3></a><br/>
+        <img src="datos/lact_EvolucionPerdidaPromedioMSC.png"   width="960px" heigth="720px" title="Gr&aacute;fico Evoluci&oacute;n Perdida Promedio Mastitis Subclinica Lactancia"  />
+	      <span style="display:inline-block">
+          <a href="#m_lactEvPerdida"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/lact_EvolucionPerdidaPromedioMSC" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Evoluci&oacute;n Perdida Promedio Mastitis Subclinica Lactancia" /></a>
+        </span><br/>  
+
+	      <a id="vSaludNuevaMCLact"><h3>Variaci&oacute;n Salud Lactancia Nueva Mastitis Clinica</h3></a><br/>
+        <img src="datos/lact_EvolucionSaludNuevaMC.png"   width="960px" heigth="720px" title="Gr&aacute;fico Variaci&oacute;n Salud Lactancia Nueva Mastitis Clinica"  />
+	      <span style="display:inline-block">
+          <a href="#m_lactVarMastitis"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/lact_EvolucionSaludNuevaMC" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Variaci&oacute;n Salud Lactancia Nueva Mastitis Clinica" /></a>
+        </span><br/>  
+
+        <a id="vSaludNuevaMSCLact"><h3>Variaci&oacute;n Salud Lactancia Nueva Mastitis Subclinica </h3></a><br/>
+        <img src="datos/lact_EvolucionSaludNuevaMSC.png"   width="960px" heigth="720px" title="Gr&aacute;fico Variaci&oacute;n Salud Lactancia Nueva Mastitis Subclinica"  />
+	      <span style="display:inline-block">
+          <a href="#m_lactVarMastitis"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/lact_EvolucionSaludNuevaMSC" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Variaci&oacute;n Salud Lactancia Nueva Mastitis Subclinica" /></a>
+        </span><br/>  
+
+        <a id="vSaludCronicaMSCLact"><h3>Variaci&oacute;n Salud Lactancia Cr&oacute;nica MSC</h3></a><br/>
+        <img src="datos/lact_EvolucionSaludCronicaMSC.png"   width="960px" heigth="720px" title="Gr&aacute;fico Variaci&oacute;n Salud Lactancia Cr&oacute;nica MSC"  />
+	      <span style="display:inline-block">
+          <a href="#m_lactVarMastitis"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/lact_EvolucionSaludCronicaMSC" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Variaci&oacute;n Salud Lactancia Cr&oacute;nica MSC" /></a>
+        </span><br/>  
+      </div>
+
+        <!-- Graficos Anuales -->
+        <div style="width:98%;background:#A9F5F2;padding:40px 00px" title="Gr&aacute;ficos Anuales">
+        <a id="a_perdidaMC"><h3>Evoluci&oacute;n Anual Perdidas por Mastitis Clinica</h3></a><br/>
+        <img src="datos/anual_PerdidaMC.png"  width="960px" heigth="720px" title="Gr&aacute;fico Evoluci&oacute;n Anual Perdidas por Mastitis Clinica" />
+        <span style="display:inline-block">
+          <a href="#m_anualPerdidas"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/anual_PerdidaMC" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Evoluci&oacute;n Anual Perdidas por Mastitis Clinica" /></a>
+        </span><br/>  
+
+        <a id="a_perdidaMSC"><h3>Evoluci&oacute;n Anual Perdidas por Mastitis Subclinica</h3></a><br/>
+        <img src="datos/anual_PerdidaMSC.png"  width="960px" heigth="720px" title="Gr&aacute;fico Evoluci&oacute;n Anual Perdidas por Mastitis Subclinica" />
+        <span style="display:inline-block">
+          <a href="#m_anualPerdidas"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/anual_PerdidaMSC" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Evoluci&oacute;n Anual Perdidas por Mastitis Subclinica" /></a>
+        </span><br/>            
+
+        <a id="a_perdidaMTot"><h3>Evoluci&oacute;n Anual Perdidas por Mastitis Total</h3></a><br/>
+        <img src="datos/anual_PerdidaMTot.png"  width="960px" heigth="720px" title="Gr&aacute;fico Evoluci&oacute;n Anual Perdidas por Mastitis Total" />
+        <span style="display:inline-block">
+          <a href="#m_anualPerdidas"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/anual_PerdidaMTot" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Evoluci&oacute;n Anual Perdidas por Mastitis Total" /></a>
+        </span><br/>  
+
+        <a id="a_descarteMC"><h3>Evoluci&oacute;n Anual Descarte por Mastitis Clinica</h3></a><br/>
+        <img src="datos/anual_DescarteMC.png"  width="960px" heigth="720px" title="Gr&aacute;fico Evoluci&oacute;n Anual Descarte por Mastitis Clinica" />
+        <span style="display:inline-block">
+          <a href="#m_anualDescarteM"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/anual_DescarteMC" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Evoluci&oacute;n Anual Descarte por Mastitis Clinica" /></a>
+        </span><br/>  
+
+        <a id="a_descarteMSC"><h3>Evoluci&oacute;n Anual Descarte por Mastitis Subclinica</h3></a><br/>
+        <img src="datos/anual_DescarteMSC.png"  width="960px" heigth="720px" title="Gr&aacute;fico Evoluci&oacute;n Anual Descarte por Mastitis Subclinica" />
+        <span style="display:inline-block">
+          <a href="#m_anualDescarteM"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/anual_DescarteMSC" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Evoluci&oacute;n Anual Descarte por Mastitis Subclinica" /></a>
+        </span><br/>  
+
+        <a id="a_descarteMTot"><h3>Evoluci&oacute;n Anual Descarte por Mastitis Total</h3></a><br/>
+        <img src="datos/anual_DescarteMTot.png"  width="960px" heigth="720px" title="Gr&aacute;fico Evoluci&oacute;n Anual Descarte por Mastitis Total" />
+        <span style="display:inline-block">
+          <a href="#m_anualDescarteM"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/anual_DescarteMTot" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Evoluci&oacute;n Anual Descarte por Mastitis Total" /></a>
+        </span><br/>  
+
+        <a id="a_prenezMC"><h3>Evoluci&oacute;n Anual Perdida de Pre&ntilde;ez por Mastitis Clinica</h3></a><br/>
+        <img src="datos/anual_PrenezMC.png"  width="960px" heigth="720px" title="Gr&aacute;fico Evoluci&oacute;n Anual Perdida de Pre&ntilde;ez por Mastitis Clinica" />
+        <span style="display:inline-block">
+          <a href="#m_anualPreniezM"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/anual_PrenezMC" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Evoluci&oacute;n Anual Perdida de Pre&ntilde;ez por Mastitis Clinica" /></a>
+        </span><br/>  
+
+        <a id="a_prenezMSC"><h3>Evoluci&oacute;n Anual Perdida de Pre&ntilde;ez por Mastitis Subclinica</h3></a><br/>
+        <img src="datos/anual_PrenezMSC.png"  width="960px" heigth="720px" title="Gr&aacute;fico Evoluci&oacute;n Anual Perdida de Pre&ntilde;ez por Mastitis Subclinica" />
+        <span style="display:inline-block">
+          <a href="#m_anualPreniezM"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/anual_PrenezMSC" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Evoluci&oacute;n Anual Perdida de Pre&ntilde;ez por Mastitis Subclinica" /></a>
+        </span><br/>  
+
+        <a id="a_prenezMTot"><h3>Evoluci&oacute;n Anual Perdida de Pre&ntilde;ez por Mastitis Total</h3></a><br/>
+        <img src="datos/anual_PrenezMTot.png"  width="960px" heigth="720px" title="Gr&aacute;fico Evoluci&oacute;n Anual Perdida de Pre&ntilde;ez por Mastitis Total" />
+        <span style="display:inline-block">
+          <a href="#m_anualPreniezM"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/anual_PrenezMTot" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Evoluci&oacute;n Anual Perdida de Pre&ntilde;ez por Mastitis Total" /></a>
+        </span><br/>  
+
+        <a id="a_mes17"><h3>Evoluci&oacute;n Anual Pre&ntilde;ez Mes 17</h3></a><br/>
+        <img src="datos/anual_Mes17.png"  width="960px" heigth="720px" title="Gr&aacute;fico Evoluci&oacute;n Anual Pre&ntilde;ez Mes 17" />
+        <span style="display:inline-block">
+          <a href="#m_anualPreniez17"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/anual_Mes17" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Evoluci&oacute;n Anual Pre&ntilde;ez Mes 17" /></a>
+        </span><br/>  
+
+        <a id="a_cantidadMC"><h3>Evoluci&oacute;n Anual Cantidad de Salud por Mastitis Clinica</h3></a><br/>
+        <img src="datos/anual_CantidadMC.png"  width="960px" heigth="720px" title="Gr&aacute;fico Evoluci&oacute;n Anual Cantidad de Salud por Mastitis Clinica" />
+        <span style="display:inline-block">
+          <a href="#m_anualSalud"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/anual_CantidadMC" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Evoluci&oacute;n Anual Cantidad de Salud por Mastitis Clinica" /></a>
+        </span><br/>  
+
+        <a id="a_cantidadMSC"><h3>Evoluci&oacute;n Anual Cantidad de Salud por Mastitis Subclinica</h3></a><br/>
+        <img src="datos/anual_CantidadMSC.png"  width="960px" heigth="720px" title="Gr&aacute;fico Evoluci&oacute;n Anual Cantidad de Salud por Mastitis Subclinica" />
+        <span style="display:inline-block">
+          <a href="#m_anualSalud"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/anual_CantidadMSC" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Evoluci&oacute;n Anual Cantidad de Salud por Mastitis Subclinica" /></a>
+        </span><br/>  
+
+        <a id="a_cantidadMTot"><h3>Evoluci&oacute;n Anual Cantidad de Salud por Mastitis Total</h3></a><br/>
+        <img src="datos/anual_CantidadMTot.png"  width="960px" heigth="720px" title="Gr&aacute;fico Evoluci&oacute;n Anual Cantidad de Salud por Mastitis Total" />
+        <span style="display:inline-block">
+          <a href="#m_anualSalud"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/anual_CantidadMTot" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Evoluci&oacute;n Anual Cantidad de Salud por Mastitis Total" /></a>
+        </span><br/>  
+
+        <a id="a_RcsTambo"><h3>Evoluci&oacute;n Anual Rcs Tambo</h3></a><br/>
+        <img src="datos/anual_RcsTambo.png"  width="960px" heigth="720px" title="Gr&aacute;fico Evoluci&oacute;n Anual Rcs Tambo" />
+        <span style="display:inline-block">
+          <a href="#m_anualRcsTambo"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/anual_RcsTambo" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Evoluci&oacute;n Anual Rcs Tambo" /></a>
+        </span><br/>  
+
+	      <a id="a_gastoTotal"><h3>Gasto Total</h3></a><br/>
+        <img src="datos/anual_GastoTotal.png"  width="960px" heigth="720px" title="Gr&aacute;fico Gasto Total" />
+        <span style="display:inline-block">
+          <a href="#m_anualCostos"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/anual_GastoTotal" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Gasto Total" /></a>
+        </span><br/>  
+
+	      <a id="a_perdTotal"><h3>Perdida Total</h3></a><br/>
+        <img src="datos/anual_PerdTotal.png"  width="960px" heigth="720px" title="Gr&aacute;fico Perdida Total" />
+        <span style="display:inline-block">
+          <a href="#m_anualCostos"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/anual_PerdTotal" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Perdida Total" /></a>
+        </span><br/>  
+
+	      <a id="a_costoTotal"><h3>Costo Total</h3></a><br/>
+        <img src="datos/anual_CostoTotal.png"  width="960px" heigth="720px" title="Gr&aacute;fico Costo Total" />
+        <span style="display:inline-block">
+          <a href="#m_anualCostos"><img src="infoEstadisticas/ico_menu.gif" width="32px" heigth="32px" title="Volver al menu" /></a><br/>
+          <a href="datos/anual_CostoTotal" target="_blank"><img src="infoEstadisticas/ico_datos.png" width="32px" heigth="32px" title="Datos Costo Total" /></a>
+        </span><br/>            
+      </div>  
+    </center>
+    </section>
+  </div>
+
+</body>
+</html>
